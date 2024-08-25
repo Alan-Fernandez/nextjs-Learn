@@ -1,5 +1,5 @@
-import "@/app/ui/global.css";
-import { montserrat } from "./ui/fonts";
+import '@/app/ui/global.css';
+import { montserrat } from './ui/fonts';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -17,11 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${montserrat.className} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${montserrat.className} antialiased`}>{children}</body>
     </html>
   );
 }
